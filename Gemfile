@@ -7,6 +7,6 @@ gem 'mysql'
 gem 'ruby-debug'
 
 group :development, :test do
-  gem 'webrat'
+  # gem 'webrat'
   gem 'mongrel'
 end

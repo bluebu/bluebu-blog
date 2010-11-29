@@ -7,4 +7,4 @@ db/schema.rb
 .project
 *~
 config/database.yml
-
+vendor/ruby/
