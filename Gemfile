@@ -14,6 +14,7 @@ gem 'authlogic', :git => 'git://github.com/binarylogic/authlogic.git'
 gem 'formtastic'
 
 gem 'mysql'
+gem 'mysql2'
 
 group :production do
   gem 'thin'
