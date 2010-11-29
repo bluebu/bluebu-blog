@@ -65,7 +65,7 @@ h1 span {
     text-transform: uppercase;
 }
 
-#navigation a:hover, #active-page a {
+#navigation a:hover, #navigation .active-page a {
     background: #FF0060;
     color: white;
 }

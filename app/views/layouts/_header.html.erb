@@ -6,11 +6,10 @@
     <!-- Navigation -->
     <ol id="navigation">
         <!-- Use this id to identify the active page -->
-        <li id="active-page"><a href="/">首页</a></li>
-        <li><a href="/blog">博客</a></li>
-        <li><a href="/code">代码库</a></li>
-
-        <li><a href="/me">其他</a></li>
+        <li<%= " class='active-page'" if params[:controller]=='root'%>><a href="/" title="首页">首页</a></li>
+        <li<%= " class='active-page'" if params[:controller]=='articles'%>><a href="/blog" title="博客">博客</a></li>
+        <li<%= " class='active-page'" if params[:controller]=='codes'%>><a href="/code" title="代码库">代码库</a></li>
+        <li<%= " class='active-page'" if params[:controller]=='me'%>><a href="/me" title="关于我">关于我</a></li>
     </ol>
     <div class="clear"></div>
 </div>

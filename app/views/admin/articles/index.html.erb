@@ -50,7 +50,7 @@
                         <%=h article.try(:category).try(:name)||"无" %>
                     </td>
                     <td>
-                    	<a href="/article/<%=article.id%>" target="_blank">预览</a>
+                    	<a href="/articles/<%=article.id%>" target="_blank">预览</a>
                         <%= link_to '编辑', {:action => :edit, :id => article} %>
                         <%= link_to '删除', {:action => :destroy, :id => article}, {:confirm => "您确定删除吗？", :method => :delete} %>
                     </td>
