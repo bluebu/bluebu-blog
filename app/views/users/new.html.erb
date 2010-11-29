@@ -1,0 +1,9 @@
+<%= form_for @user, :url => account_path do |f| %>
+  <%= f.label :email, "邮箱" %>
+  <%= f.text_field :email %><br/>
+  <%= f.label :password, "密码" %>
+  <%= f.password_field :password %><br/>
+  <%= f.label :password_confirmation, "密码确认" %>
+  <%= f.password_field :password_confirmation %><br/>
+  <%= f.submit '注册'%>
+<% end %>

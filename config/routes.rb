@@ -4,6 +4,9 @@ Bluebu::Application.routes.draw do
   get "articles/show"
 
   root :to => "root#index"
+  
+  resource :account, :controller => 'users' 
+  resource :user_session
 
   namespace :admin do
     root :to => "root#index"
