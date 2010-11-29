@@ -2,13 +2,84 @@
 <html>
 <head>
   <title>Bluebu</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
+  <%= stylesheet_link_tag 'style' %>
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js","root", :catch=>true %>
   <%= csrf_meta_tag %>
 </head>
 <body>
 
-<%= yield %>
+<%#= yield %>
+<!-- Contains and centers the page -->
+<div id="background-glow">
+<div id="container-wrap">
+<div id="container">
+    <!-- Header - logo and navigation -->
+    <div id="header">
+        <!-- 'Floating' logo -->
+
+        <h1><span>Hi-Ruby中文站即将启航</span></h1>
+        <!-- Navigation -->
+        <ol id="navigation">
+            <!-- Use this id to identify the active page -->
+            <li id="active-page"><a href="/">首页</a></li>
+            <li><a href="#">博客</a></li>
+            <li><a href="#">代码库</a></li>
+
+            <li><a href="#">其他</a></li>
+        </ol>
+        <div class="clear"></div>
+    </div>
+    <!-- Intro lead text -->
+    <div class="intro">
+        <img src="/images/root/intro.png" alt="Hi, my name is Mike and I'm a freelance web designer. I take your ideas and turn them into gold without breaking the bank. Please browse through my work and contact me if you have any questions." />
+    </div>
+
+    <!-- Latest project -->
+    <h2 id="latest-project-title"><img src="/images/root/titles/latest-project.png" alt="Latest project" /></h2>
+    <div id="latest-project">
+        <div class="preview">
+            <a href="#" class="changer prev"><img src="/images/root/change-prev.png" alt="Previous item" /></a>
+            <a href="#" class="changer next"><img src="/images/root/change-next.png" alt="Next item" /></a>
+            <img src="/images/root/projects/panda.png" alt="Panda Sofas" class="image" />
+        </div>
+        <div class="descr">
+
+            <h3 class="title">Panda Sofas</h3>
+            <p class="description">Panda Sofas approached me with a vision. They wanted a warm interior themed website with basic functions and they wanted it in time for their grand opening a week later. Total project completion time was 48 hours of grinding but it was well worth it.</p>
+            <p class="actions"><a href="#">Launch</a> <a href="#">Details</a></p>
+        </div>
+    </div>
+
+    <!-- Past work -->
+
+    <h2><img src="/images/root/titles/past-work.png" alt="Past work" /></h2>
+    <div id="past-work">
+        <p class="item"><a href="#"><img src="/images/root/work/reinvigorate.png" alt="Reinvigorate" /></a></p>
+        <p class="item"><a href="#"><img src="/images/root/work/pulse.png" alt="Pulse" /></a></p>
+        <p class="item"><a href="#"><img src="/images/root/work/mobify.png" alt="Mobify" /></a></p>
+        <div class="clear"></div>
+    </div>
+
+    <!-- Footer -->
+
+    <div id="footer">
+        <div class="contact">
+            <h2><img src="/images/root/titles/contact.png" alt="Contact Me" /></h2>
+            <p class="lead">Whew! You made it! If you have any questions or simply want to hire me, continue reading:</p>
+            <p><strong>PH</strong>: 978 844 5535</p>
+            <p><strong>EM</strong>: designer@myportfolio.com</p>
+
+        </div>
+        <div class="about">
+            <h2><img src="/images/root/titles/about.png" alt="About Me" /></h2>
+            <p>I've been in the design game for about 5 years now. I honestly can't remember what got me started with web design but I know I don't regret getting into it. It's such a dynamic industry so I'm always on my toes. I'm a college student and I'm trying to make a living however I can.</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+</div>
+
+</div>
 
 </body>
 </html>
