@@ -1,0 +1,4 @@
+<h1 class="title">编辑资讯<span style="float: right; margin-right: 10px;"><%= link_to '返回', :action => :index %></span></h1>
+<% form_for(@article, :url => {:action => :update, :id => @article}, :html=>{:multipart=>true}) do |f| %>
+<%=render :partial=>'form', :locals => {:f => f}%>
+<% end %>

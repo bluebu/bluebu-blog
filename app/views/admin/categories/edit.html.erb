@@ -1,0 +1,43 @@
+<h1 class="title">编辑资讯栏目<%= "--#{flash[:notice]}" unless flash[:notice].blank? %></h1>
+<% form_for(@category, :url => {:action => :update, :id => @category}) do |f| %>
+<table class="article">
+    <%= render :partial => "form", :locals => {:f => f} %>
+    <tr>
+        <td class="column_1">
+        </td>
+        <td class="column_2">
+            <%= f.submit '修 改' %>
+            　｜　<%= link_to '返回', :action => :index %>
+        </td>
+    </tr>
+</table>
+<% end %>
+<style>
+    .article {
+        border: 1px solid #DDDDDD;
+        border-collapse: collapse;
+        empty-cells: show;
+        margin: 10px auto;
+        width: 98%;
+    }
+    
+    .article td {
+        border: 1px solid #DDDDDD;
+        color: #666666;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 10px;
+        text-align: center;
+    }
+    
+    .article td.column_1 {
+        width: 11%;
+        text-align: right;
+    }
+    
+    .article td.column_2 {
+        align: left;
+        text-align: left;
+    }
+</style>

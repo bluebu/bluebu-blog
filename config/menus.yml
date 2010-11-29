@@ -1,0 +1,49 @@
+admin:
+  -
+    - 系统设置
+    -
+      -
+        - 分类管理
+        - /admin/categories
+      -
+        - 广告管理
+        - /admin/banners
+      -
+        - 推荐管理
+        - /admin/recommends
+  -
+    - 内容管理
+    -
+      -
+        - 文章管理
+        - /admin/articles
+      -
+        - 公告管理
+        - /admin/announcements
+      -
+        - 研报管理
+        - /admin/reports
+      -
+        - 评论管理
+        - /admin/reviews
+      -
+        - 教程管理
+        - /admin/courses
+      -
+        - 个股日交易记录管理
+        - /admin/journals
+      -
+        - 股票管理
+        - /admin/stocks
+      -
+        - 软件下载管理
+        - /admin/softwares
+  -
+    - 用户互动
+    -
+      -
+        - 投资者服务专区管理
+        - /admin/answers
+      -
+        - 疑难股解析管理
+        - /admin/stock_answers

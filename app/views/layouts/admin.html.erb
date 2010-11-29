@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Hi-Ruby后台管理系统</title>
+        <%= stylesheet_link_tag 'all', 'admin' %>
+    </head>
+    <body>
+        <div id="wapper">
+            <div id="head">
+                <div class="top_menu">
+                    登录成功
+                </div>
+                <div class="logo">
+                    Hi-Ruby后台管理系统
+                </div>
+            </div>
+            <div id="middle">
+                <table width="100%">
+                    <tr valign="top">
+                        <td width="20%">
+                            <%= render :partial => '/admin/sidebar' %>
+                        </td>
+                        <td width="80%">
+                            <div id="css_mainbody" style="width:100%;">
+                                <%= yield %>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="foot">
+                <div id="foot1">
+                    <span class="infor">Copyright &copy; it2vc 版权所有 2009-2010,  All Rights Reserved　</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

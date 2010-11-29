@@ -1,0 +1,38 @@
+<h1 class="title">资讯栏目列表<%= "--#{flash[:notice]}" unless flash[:notice].blank? %><span style="float: right; margin-right: 10px;"><%= link_to '新建资讯栏目', "/admin/categories/new" %></span></h1>
+<table class="grid">
+    <tbody>
+        <tr>
+            <th>
+                栏目名称
+            </th>
+            <th>
+                栏目描述
+            </th>
+            <th>
+                编辑
+            </th>
+            <th>
+                删除
+            </th>
+        </tr>
+        <% for category in @categories %>
+        <tr>
+            <td width="15%">
+                <%=h category.name %>
+            </td>
+            <td width="60%">
+                <%=h category.info %>
+            </td>
+            <td width="8%">
+                <%= link_to '编辑', {:action => :edit, :id => category} %>
+            </td>
+            <td>
+                <%= link_to '删除', {:action => :destroy, :id => category} ,{:confirm => "您确定删除吗？",:method=>:delete}%>
+            </td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
+<div class="book_page">
+    <%=will_paginate @categories %>
+</div>
