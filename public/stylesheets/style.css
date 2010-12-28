@@ -19,7 +19,7 @@ body {
 
 #container {
     margin: 0 auto;
-    width: 960px;
+    width: 980px;
 }
 
 /**
@@ -32,7 +32,7 @@ body {
 }
 
 /* Logo */
-h1 {
+.logo {
     background: url('/images/root/logo.png') no-repeat;
     display: block;
     float: left;
@@ -41,7 +41,7 @@ h1 {
     width: 254px;
 }
 
-h1 span {
+.logo span {
     visibility: hidden;
 }
 
@@ -216,3 +216,130 @@ a {
 a img {
     border: 0;
 }
+
+
+
+/* content start */
+#content{
+  display:block;
+  float: left;
+  width: 670px;
+  margin-top:5px;
+  padding: 0 0 30px;
+  width: 670px;
+  border-right:#EBFFEB solid 2px;
+  min-height: 420px;
+}
+/* content end */
+
+/* sidebar start */
+#sidebar{
+  float: right;
+  width:250px;
+  padding:30px 5px;
+  line-height: 1.7em;
+  margin: 0 0 25px;
+}
+#sidebar p.about-me {
+    font-size: 12px;
+    line-height: 1.4em;
+    padding: 10px 0;
+    text-align: justify;
+}
+#sidebar p.about-me a {
+    color: #000000;
+}
+#sidebar p.about-me a:hover {
+    background: none repeat scroll 0 0 #73880A;
+    color: #FFFFFF;
+}
+#sidebar a {
+    background: none repeat scroll 0 0 transparent;
+    color: white;
+}
+#sidebar h3 {
+    font-size: 18px;
+    padding: 25px 0 3px;
+}
+#sidebar .block ul {
+   list-style: none outside none;
+   border-top: 1px solid #DDDDDD;
+}
+#sidebar .block ul .children {
+    border: 0 none;
+    padding: 0 0 0 8px;
+}
+#sidebar .block li {
+    border-bottom: 1px solid #DDDDDD;
+}
+#sidebar .block li a {
+    background: url("/images/bullet.gif") no-repeat scroll 6px 52% transparent;
+    border-bottom: medium none;
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 2px 0 2px 15px;
+}
+#sidebar .block li a:hover {
+    background: url("/images/bullet_black.gif") no-repeat scroll 6px 52% transparent;
+}
+/* sidebar end */
+
+/* share start */
+.share {
+    border-top: 1px dashed #CCCCCC;
+    font-size: 12px;
+    height: auto;
+    line-height: 20px;
+    padding-top: 5px;
+    text-indent: 0;
+}
+.share b {
+    float: left;
+}
+.share a {
+    background: url("/images/share.png") no-repeat scroll left center #FFFFFF;
+    float: left;
+    margin: 0 4px;
+    opacity: 0.7;
+    padding: 0 4px 0 21px;
+    text-decoration: none;
+}
+.share a:hover {
+    -moz-box-shadow: 0 0 2px #999999;
+    opacity: 1;
+}
+.share br {
+    clear: both;
+    height: 0;
+    line-height: 0;
+}
+a#qqtwet {
+    background-position: 0 -180px;
+}
+a#renren {
+    background-position: 0 -120px;
+}
+a#kaixin {
+    background-position: -80px -120px;
+}
+a#qqzone {
+    background-position: 0 -140px;
+}
+a#sntwet {
+    background-position: -80px -180px;
+}
+a#bdcang {
+    background-position: -80px -100px;
+}
+a#shuoke {
+    background-position: 0 -200px;
+}
+a#qqfavs {
+    background-position: -80px -200px;
+}
+a#douban {
+    background-position: 0 -220px;
+}
+
+/* share end */

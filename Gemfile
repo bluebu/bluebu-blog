@@ -4,7 +4,7 @@ gem 'rails', '3.0.3'
 
 
 # 富文本编辑器
-gem 'ckeditor', :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
+gem 'ckeditor'
 gem 'paperclip'
 
 gem 'acts_as_state_machine'
