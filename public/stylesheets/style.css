@@ -1,6 +1,6 @@
 /**
- * Body, container
- */
+* Body, container
+*/
 body {
     background: #1a1a1a url('/images/root/background.png') repeat-x;
     color: white;
@@ -8,29 +8,24 @@ body {
     font-size: 11pt;
     margin: 0;
 }
-
 #background-glow {
     background: url('/images/root/bg-center.png') top center no-repeat;
 }
-
 #container-wrap {
     background: url('/images/root/header-background.png') repeat-x;
 }
-
 #container {
     margin: 0 auto;
     width: 980px;
 }
-
 /**
- * Header
- */
+* Header
+*/
 #header {
     background: url('/images/root/header-background.png') repeat-x;
     color: black;
     height: 66px;
 }
-
 /* Logo */
 .logo {
     background: url('/images/root/logo.png') no-repeat;
@@ -40,22 +35,18 @@ body {
     margin: 0;
     width: 254px;
 }
-
 .logo span {
     visibility: hidden;
 }
-
 /* Navigation */
 #navigation {
     float: right;
     margin: 20px 75px 0 0;
 }
-
 #navigation li {
     display: inline;
     list-style: none;
 }
-
 #navigation a {
     color: black;
     font-size: 11pt;
@@ -64,24 +55,20 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 }
-
 #navigation a:hover, #navigation .active-page a {
     background: #FF0060;
     color: white;
 }
-
 .intro {
     float: right;
     margin-top: 20px;
 }
-
 /**
- * Headings
- */
+* Headings
+*/
 h2 {
     margin: 5px 0 5px 50px;
 }
-
 h3 {
     font-size: 13pt;
     font-weight: normal;
@@ -89,71 +76,59 @@ h3 {
     padding: 5px 10px;
     text-transform: uppercase;
 }
-
 /**
- * Links
- */
+* Links
+*/
 a {
     color: #ff0060;
     text-decoration: none;
 }
-
 /**
- * Latest project
- */
+* Latest project
+*/
 #latest-project-title {
     margin-top: 50px;
 }
-
 #latest-project {
     margin: 0 auto 20px auto;
     width: 892px;
 }
-
 #latest-project .preview {
     height: 330px;
     text-align: center;
 }
-
 #latest-project .descr {
     background: #323232 url('/images/root/latest-project-descr-background.png') repeat-x;
     padding: 10px 0;
 }
-
 #latest-project .descr p {
     margin: 5px 10px;
 }
-
 #latest-project .descr p.actions {
     font-size: 10pt;
     text-align: right;
     text-transform: uppercase;
     word-spacing: 15px
 }
-
 .changer {
     height: 66px;
     margin-top: 132px; /* (.preview(height) / 2) - (.changer(height) / 2) */
     position: absolute;
     width: 67px;
 }
-
 .prev {
     margin-left: -33px; /* .changer(width) / 2 */
 }
-
 .next {
-   margin-left: 859px; /* .preview(width) - (.changer(width) / 2) */
+    margin-left: 859px; /* .preview(width) - (.changer(width) / 2) */
 }
-
 /**
- * Past work
- */
+* Past work
+*/
 #past-work {
     margin: 0 auto;
     width: 892px;
 }
-
 #past-work .item {
     background: url('/images/root/work_preview_border.png') no-repeat;
     height: 152px;
@@ -163,82 +138,242 @@ a {
     padding: 3px;
     width: 286px;
 }
-
 /**
- * Footer
- */
+* Footer
+*/
 #footer {
     background: #303030;
     font-size: 11pt;
     margin: 20px auto 0 auto;
     padding: 10px;
-    width: 892px;
+    width: 100%;
 }
-
 #footer h2 {
     margin: 0;
     padding: 0;
 }
-
 #footer p {
     margin: 0;
 }
-
 #footer strong {
     font-weight: normal;
     text-transform: uppercase;
 }
-
 .lead {
     font-weight: bold;
 }
-
 #footer .contact, #footer .about {
     float: left;
 }
-
 #footer .contact {
     width: 50%;
 }
-
 #footer .about {
     width: 50%;
 }
-
 /**
- * Fixes/tweaks
- */
+* Fixes/tweaks
+*/
 .clear {
     clear: both;
     height: 0;
 }
-
 a img {
     border: 0;
 }
-
-
-
 /* content start */
-#content{
-  display:block;
-  float: left;
-  width: 670px;
-  margin-top:5px;
-  padding: 0 0 30px;
-  width: 670px;
-  border-right:#EBFFEB solid 2px;
-  min-height: 420px;
+#content {
+    display:block;
+    float: left;
+    width: 670px;
+    margin-top:5px;
+    padding: 0 0 30px;
+    width: 670px;
+    min-height: 420px;
 }
+#content .post_content{
+  padding-bottom:10px;
+}
+
+#content .link {
+    border-top: 1px dashed #CCCCCC;
+    margin-top:5px;
+    padding: 10px 0 5px;
+}
+#content .postinfo {
+    padding: 10px 0 5px;
+}
+#content .entrymeta {
+    background: none repeat scroll 0 0 #AAAAAA;
+    padding: 10px;
+    position: relative;
+    width: 650px;
+    color: #5E5E55;
+    font-size: 12px;
+    line-height: 20px;
+}
+#content .entrymeta a:visited {
+    color: #0196E3;
+}
+#content .entrymeta .spostinfo {
+    font-size:12px;
+}
+#content .entrymeta .authorbio {
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 2px;
+    text-align: center;
+    width: 90px;
+}
+#content .entrymeta .author_pic {
+    margin: 0 auto 0;
+    width: 48px;
+}
+#content .entrymeta .author_pic img {
+    border: 0 none;
+}
+/* comment start */
+.commentlist {
+    padding:0px;
+}
+.commentlist .comment {
+    border: 1px solid #CCCCCC;
+    list-style: none outside none;
+    margin: 10px 0 0;
+    padding: 10px;
+}
+.commentlist li {
+    position: relative;
+}
+.commentlist p {
+    line-height: 23px;
+    margin: 0 0 0 50px;
+}
+.reply {
+    background: url("images/bg.png") repeat scroll 0 -398px transparent;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: -1px;
+}
+.comment-reply-link {
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 2px 15px;
+    text-align: center;
+}
+.comment-reply-link:hover {
+    color: #D6D6D6;
+}
+.cancel-comment-reply a {
+    color: #0196E3;
+    font-size: 12px;
+}
+.datetime, .datetime a {
+    color: #B2B2B2;
+    padding: 0 0 5px;
+}
+#commentform {
+    float: left;
+    margin: 0 0 0 10px;
+    width: 70%;
+}
+#commentform p {
+    color: #000000;
+    margin: 5px 0;
+}
+#commentform label {
+    color: #868686;
+}
+#commentform input {
+    font-size: 12px;
+    padding: 5px;
+    width: 200px;
+}
+#commentform {
+    color: #868686;
+    margin-top: 10px;
+}
+#commentform input {
+    border: 1px solid #CCCCCC;
+    margin: 5px 5px 1px 0;
+    padding: 5px;
+    width: 240px;
+}
+#commentform input:focus {
+    border: 1px solid #CCCCCC;
+}
+#commentform #author {
+    background: url("images/login.png") no-repeat scroll 0 -36px #FFFFFF;
+}
+#commentform #email {
+    background: url("images/login.png") no-repeat scroll 0 -17px #FFFFFF;
+}
+#commentform #url {
+    background: url("images/login.png") no-repeat scroll 0 2px #FFFFFF;
+}
+#commentform textarea {
+    border: 1px solid #CCCCCC;
+    font-size: 12px;
+    height: 120px;
+    margin: 15px 0 0;
+    padding: 4px;
+    width: 539px;
+}
+#commentform textarea:focus {
+    border: 1px solid #CCCCCC;
+}
+#commentform input#submit {
+    background: url("images/bg.png") repeat scroll 0 -349px transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 26px;
+    text-align: center;
+    text-shadow: 0 1px 0 #393939;
+    width: 87px;
+}
+#commentform #submit:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+#commentform input#reset {
+    background: url("images/bg.png") repeat scroll 0 -325px transparent;
+    border: 0 none;
+    color: #393939;
+    cursor: pointer;
+    height: 26px;
+    text-align: center;
+    text-shadow: 0 1px 0 #FFFFFF;
+    width: 87px;
+}
+#commentform #reset:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+/* comment end */
+/*comment bellow form start*/
+#respond_box {
+    margin: 10px 0 0;
+    padding: 10px;
+    position: relative;
+    width: 648px;
+    border: 1px solid #CCCCCC;
+}
+#respond {
+}
+/*comment bellow form end*/
+
 /* content end */
 
 /* sidebar start */
-#sidebar{
-  float: right;
-  width:250px;
-  padding:30px 5px;
-  line-height: 1.7em;
-  margin: 0 0 25px;
+#sidebar {
+    float: right;
+    width:250px;
+    padding:30px 5px;
+    line-height: 1.7em;
+    margin: 0 0 25px;
 }
 #sidebar p.about-me {
     font-size: 12px;
@@ -262,8 +397,8 @@ a img {
     padding: 25px 0 3px;
 }
 #sidebar .block ul {
-   list-style: none outside none;
-   border-top: 1px solid #DDDDDD;
+    list-style: none outside none;
+    border-top: 1px solid #DDDDDD;
 }
 #sidebar .block ul .children {
     border: 0 none;
@@ -291,7 +426,7 @@ a img {
     font-size: 12px;
     height: auto;
     line-height: 20px;
-    padding-top: 5px;
+    padding: 5px 0;
     text-indent: 0;
 }
 .share b {
@@ -341,5 +476,18 @@ a#qqfavs {
 a#douban {
     background-position: 0 -220px;
 }
-
 /* share end */
+
+/* avatar start */
+#avatar {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin: 2px 10px 0 0;
+    padding: 2px;
+    position: relative;
+}
+.author {
+    line-height: 38px;
+}
+/* anatar end */

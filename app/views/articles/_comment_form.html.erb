@@ -1,0 +1,75 @@
+<div id="respond_box">
+    <div id="respond">
+        <h3>给我留言</h3>
+        <div class="cancel-comment-reply">
+            <small>
+                <a style="display: none;" href="/wordpress-themes-for-your-login-form-to-add-a-front.html#respond" id="cancel-comment-reply-link" rel="nofollow">点击这里取消回复。</a>
+            </small>
+        </div>
+        <span class="set_avatar"><a href="http://zmingcx.com/for-a-portrait-of-his-own-gravatar.html" target="_blank" title="如何申请一个自己的Gravatar全球通用头像">
+            <img src="http://zmingcx.com/wp-content/themes/HotNewspro24/images/tx.gif" original="http://zmingcx.com/wp-content/themes/HotNewspro24/images/tx.gif" style="display: inline;"></a></span>
+        <form id="commentform" method="post" action="http://zmingcx.com/wp-comments-post.php">
+            <div id="comment-author-info">
+                <p>
+                    <input type="text" tabindex="1" size="22" value="" class="commenttext" id="author" name="author">
+                    <label for="author">
+                        昵称 *
+                    </label>
+                </p>
+                <p>
+                    <input type="text" tabindex="2" size="22" value="" class="commenttext" id="email" name="email">
+                    <label for="email">
+                        邮箱 *
+                    </label>
+                </p>
+                <p>
+                    <input type="text" tabindex="3" size="22" value="" class="commenttext" id="url" name="url">
+                    <label for="url">
+                        网址
+                    </label>
+                </p>
+            </div>
+            <!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+            <div class="clear">
+            </div>
+            <p>
+                <textarea tabindex="4" id="comment" name="comment">
+                </textarea>
+                <div id="loading" style="display: none;">
+                    正在提交, 请稍候...
+                </div>
+                <div id="error" style="display: none;">
+                    #
+                </div>
+            </p>
+            <p>
+            </p>
+            <p>
+                <input type="submit" value="提交留言" tabindex="5" id="submit" name="submit" class="submit">
+                <input type="reset" value="重写" tabindex="6" id="reset" name="reset" class="reset">
+                <input type="hidden" id="comment_post_ID" value="3143" name="comment_post_ID">
+                <input type="hidden" value="0" id="comment_parent" name="comment_parent">
+            </p>
+            <script type="text/javascript">
+                //Crel+Enter
+                $(document).keypress( function(e) {
+                    if(e.ctrlKey &amp;&amp; e.which == 13 || e.which == 10) {
+                    $(".submit").click();
+                    document.body.focus();
+                    } else if (e.shiftKey &amp;&amp; e.which==13 || e.which == 10) {
+                    $(".submit").click();
+                    }
+                })
+            </script>
+            <p style="display: none;">
+                <input type="hidden" value="a6c5253408" name="akismet_comment_nonce" id="akismet_comment_nonce">
+            </p>
+            <input type="checkbox" style="margin-left: 0px;" checked="checked" value="comment_mail_notify" id="comment_mail_notify" name="comment_mail_notify">
+            <label for="comment_mail_notify">
+                有人回复时邮件通知我
+            </label>  / 快捷键：Ctrl+Enter
+        </form>
+        <div class="clear">
+        </div>
+    </div>
+</div>

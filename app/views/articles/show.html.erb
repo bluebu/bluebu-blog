@@ -1,5 +1,71 @@
-<h2><%= @article.title %></h2>
+<div class="clear">
+</div>
+<!-- content start -->
+<div id="content" >
+    <!-- post start  -->
+    <div class="post">
+        <!-- <span class="icon">这里有个分类图标</span> -->
+        <h1><%= link_to @article.title, @article %></h1>
+        <div class="info">
+            <span class="date">2010年12月30日 11:30</span>
+            <span class="author">BlueBu</span>
+        </div>
+        <!-- post content start -->
+        <div class="post_content">
+            <%= raw @article.article_content.content %>
+        </div>
+        <!-- post content end -->
 
-<div class="content">
-  <%= raw @article.article_content.content %>
+        <div class="share">
+            <b>分享到：</b>
+            <br/>
+            <a id="renren" href="http://share.renren.com/share/buttonshare.do?link=http://hi-ruby.com/2010/12/170.html&amp;title=%E8%B0%B7%E6%AD%8C%E5%BE%88%E6%97%A0%E5%A5%88%EF%BC%81%E5%9B%BD%E5%AE%B6%E6%B5%8B%E7%BB%98%E5%B1%80%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%88%96%E8%A2%AB%E6%B8%85%E5%87%BA%E5%86%85%E5%9C%B0%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9B%BE%E5%B8%82%E5%9C%BA" target="_blank">人人网</a>
+            <a id="kaixin" href="http://www.kaixin001.com/repaste/share.php?rurl=http://hi-ruby.com/2010/12/170.html&amp;rtitle=%E8%B0%B7%E6%AD%8C%E5%BE%88%E6%97%A0%E5%A5%88%EF%BC%81%E5%9B%BD%E5%AE%B6%E6%B5%8B%E7%BB%98%E5%B1%80%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%88%96%E8%A2%AB%E6%B8%85%E5%87%BA%E5%86%85%E5%9C%B0%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9B%BE%E5%B8%82%E5%9C%BA" target="_blank">开心网</a><a id="qqtwet" href="http://v.t.qq.com/share/share.php?url=http://hi-ruby.com/2010/12/170.html&amp;title=%E8%B0%B7%E6%AD%8C%E5%BE%88%E6%97%A0%E5%A5%88%EF%BC%81%E5%9B%BD%E5%AE%B6%E6%B5%8B%E7%BB%98%E5%B1%80%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%88%96%E8%A2%AB%E6%B8%85%E5%87%BA%E5%86%85%E5%9C%B0%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9B%BE%E5%B8%82%E5%9C%BA" target="_blank">腾讯微博</a><a id="sntwet" href="http://v.t.sina.com.cn/share/share.php?url=http://hi-ruby.com/2010/12/170.html&amp;title=%E8%B0%B7%E6%AD%8C%E5%BE%88%E6%97%A0%E5%A5%88%EF%BC%81%E5%9B%BD%E5%AE%B6%E6%B5%8B%E7%BB%98%E5%B1%80%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%88%96%E8%A2%AB%E6%B8%85%E5%87%BA%E5%86%85%E5%9C%B0%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9B%BE%E5%B8%82%E5%9C%BA" target="_blank">新浪微博</a>
+            <a id="douban" href="http://www.douban.com/recommend/?url=http://hi-ruby.com/2010/12/170.html&amp;title=%E8%B0%B7%E6%AD%8C%E5%BE%88%E6%97%A0%E5%A5%88%EF%BC%81%E5%9B%BD%E5%AE%B6%E6%B5%8B%E7%BB%98%E5%B1%80%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%88%96%E8%A2%AB%E6%B8%85%E5%87%BA%E5%86%85%E5%9C%B0%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9B%BE%E5%B8%82%E5%9C%BA" target="_blank">豆瓣分享</a><a id="qqzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://hi-ruby.com/2010/12/170.html" target="_blank">腾讯空间</a><a id="bdcang" href="http://cang.baidu.com/do/add?iu=http://hi-ruby.com/2010/12/170.html&amp;it=%E8%B0%B7%E6%AD%8C%E5%BE%88%E6%97%A0%E5%A5%88%EF%BC%81%E5%9B%BD%E5%AE%B6%E6%B5%8B%E7%BB%98%E5%B1%80%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%88%96%E8%A2%AB%E6%B8%85%E5%87%BA%E5%86%85%E5%9C%B0%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9B%BE%E5%B8%82%E5%9C%BA" target="_blank">百度搜藏</a><a id="qqfavs" href="http://shuqian.qq.com/post?uri=http://hi-ruby.com/2010/12/170.html&amp;title=%E8%B0%B7%E6%AD%8C%E5%BE%88%E6%97%A0%E5%A5%88%EF%BC%81%E5%9B%BD%E5%AE%B6%E6%B5%8B%E7%BB%98%E5%B1%80%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%88%96%E8%A2%AB%E6%B8%85%E5%87%BA%E5%86%85%E5%9C%B0%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9B%BE%E5%B8%82%E5%9C%BA" target="_blank">腾讯书签</a>
+            <br clear="all">
+        </div>
+        <div class="link">
+            固定链接: <a href="#">谷歌很无奈！国家测绘局：谷歌或被清出内地网络地图市场 | Hi-Ruby中文站</a> + <a href="javascript:void(0);">复制链接</a>
+        </div>
+        <!-- category and tag start -->
+        <div class="postinfo">
+            <b>标签:</b> <a rel="category tag" title="View all posts in Development" href="http://gravityblast.com/category/development/">Development</a>, <a rel="category tag" title="View all posts in Ruby" href="http://gravityblast.com/category/ruby/">Ruby</a>  |
+            <span>留言关闭</span>
+        </div>
+        <!-- category and tag end -->
+
+        <!-- entrymeta start -->
+        <div class="entrymeta">
+            <div class="authorbio">
+                <div class="author_pic">
+                    <img height="48" width="48" class="avatar avatar-48 photo" src="http://1.gravatar.com/avatar/5f6401bfb2edca95a86066c78e98a14b?s=48&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=G" alt="" original="http://1.gravatar.com/avatar/5f6401bfb2edca95a86066c78e98a14b?s=48&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=G" style="display: inline;">
+                </div>
+                <div class="clear">
+                </div>
+                <div class="author_text">
+                    <h4>作者: <span><a title="由 BlueBu 发表" href="http://hi-ruby.com/author/admin/">BlueBu</a></span></h4>
+                </div>
+            </div>
+            <span class="spostinfo">
+                该日志由 bluebu 于2010年12月27日发表在<a rel="category tag" title="查看 软件人生 的全部文章" href="http://hi-ruby.com/category/%e8%bd%af%e4%bb%b6%e4%ba%ba%e7%94%9f">软件人生</a>分类下，
+                你可以<a href="#respond">发表评论</a>，并在保留<a rel="bookmark" href="http://hi-ruby.com/2010/12/170.html">原文地址</a>及作者的情况下<a rel="trackback" href="http://hi-ruby.com/2010/12/170.html/trackback">引用</a>到你的网站或博客。
+                <br>
+                原创文章转载请注明: <a title="本文固定链接 http://hi-ruby.com/2010/12/170.html" rel="bookmark" href="http://hi-ruby.com/2010/12/170.html">谷歌很无奈！国家测绘局：谷歌或被清出内地网络地图市场 | Hi-Ruby中文站</a>
+                <br>
+                <span class="content_tag"></span>
+            </span>
+            <b class="lt"></b>
+            <b class="rt"></b>
+            <div class="clear">
+            </div>
+        </div>
+        <!-- entrymeta end -->
+    </div>
+    <!-- post end -->
+    <%= render :partial => 'comments' %>
+    <%= render :partial => 'comment_form' %>
+</div>
+<!-- content end -->
+<%= render :partial => 'sidebar' %>
+<div class="clear">
 </div>
