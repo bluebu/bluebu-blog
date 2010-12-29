@@ -1,0 +1,10 @@
+zh-CN:
+  activerecord:
+    models:
+      article: 文章
+      category: 分类目录
+    attributes:
+      article:
+        category_id: 分类
+        title: 标题
+        tag_list: 标签

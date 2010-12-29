@@ -1,4 +1,5 @@
 class Article < ActiveRecord::Base
+  acts_as_taggable
   has_attached_file :logo, :styles => { :medium => "300x300>", :thumb => "100x100>" }
   belongs_to :category,:counter_cache => true
   belongs_to :user,:counter_cache => true

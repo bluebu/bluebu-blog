@@ -1,69 +1,10 @@
-<div style="text-align:center;" class="green">
-    <%= flash[:notice] %>
-</div>
 <%= javascript_include_tag :ckeditor %>
-<table class="grid_order">
-    <tr>
-        <td class="td01">
-            chanel：
-        </td>
-        <td>
-            <%#= f.select :chanel, Category.chanels.invert %>
-        </td>
-    </tr>
-    <tr>
-        <td class="td01">
-            分类：
-        </td>
-        <td>
-            <%= f.select :category_id, Category.all.map{|c| [c.name,c.id]} %>
-        </td>
-    </tr>
-    <tr>
-        <td class="td01">
-            标题：
-        </td>
-        <td>
-            <%= f.text_field :title, :size => 70 %>
-        </td>
-    </tr>
-    <tr>
-        <td class="td01">
-            作者：
-        </td>
-        <td>
-            <%= f.text_field :author %>
-        </td>
-    </tr>
-    <tr>
-        <td class="td01">
-            来源：
-        </td>
-        <td>
-            <%= f.text_field :origin_url %>
-        </td>
-    </tr>
-    <tr>
-        <td class="td01">
-            <%= f.label :logo,"缩略图：" %>
-        </td>
-        <td>
-            <%= f.file_field :logo %>
-        </td>
-    </tr>
-    <tr>
-        <td class="td01">
-            资讯内容：
-        </td>
-        <td>
-            <%= ckeditor_textarea :article_content, :content, :toolbar=>'Full', :language=>'zh-cn', :width=>'90%', :height => '500px' %>
-        </td>
-    </tr>
-    <tr>
-        <td class="td01">
-        </td>
-        <td>
-            <%= f.submit '保存' %>
-        </td>
-    </tr>
-</table>
+<%= semantic_form_for [:admin, @article] do |form| %>
+  <% form.inputs do %>
+    <%= form.input :title, :label => "标题" %>
+    <%= form.input :tag_list, :label => true %>
+  <% end %>
+  <% form.buttons do %>
+  <%= form.commit_button %>
+  <% end %>
+<% end %>

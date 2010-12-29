@@ -1,0 +1,44 @@
+/* -------------------------------------------------------------------------------------------------
+
+Load this stylesheet after formtastic.css in your layouts to override the CSS to suit your needs.
+This will allow you to update formtastic.css with new releases without clobbering your own changes.
+
+For example, to make the inline hint paragraphs a little darker in color than the standard #666:
+
+form.formtastic fieldset  ol  li p.inline-hints { color:#333; }
+
+HINT:
+The following style may be *conditionally* included for improved support on older versions of IE(<8)
+form.formtastic fieldset ol li fieldset legend { margin-left: -6px;}
+
+--------------------------------------------------------------------------------------------------*/
+form.formtastic input, form.formtastic textarea, form.formtastic select, form.formtastic label { font-size:14px; }
+
+form.formtastic input { padding: 2px; }
+form.formtastic textarea { padding: 5px; }
+form.formtastic select { padding: 1px; }
+
+form.formtastic fieldset  ol  li label { width:100px; font-weight:bold; }
+form.formtastic fieldset  ol  li label abbr { margin-left:2px; color: #f00; font-weight: bold; }
+
+form.formtastic fieldset  ol  li p.inline-hints { color:#888; margin-left:100px; width:500px; }
+form.formtastic fieldset  ol  li p.inline-errors { margin-left:100px; }
+
+form.formtastic fieldset  ol  li.boolean label { margin-left:0; padding-left:0; width:100px; }
+form.formtastic fieldset  ol  li.boolean input { float:right; }
+
+form.formtastic fieldset  ol  li.text textarea { width:auto; }
+form.formtastic fieldset  ol  li.ckeditor > span { margin-left:100px; }
+
+form.formtastic fieldset  ol  li ul.errors { margin-left:100px; }
+form.formtastic fieldset  ol  li.error  input { padding:3px; border:2px solid red; display: inline; }
+
+form.formtastic fieldset  ol  li fieldset { position:relative; padding:0; margin: 0; }
+form.formtastic fieldset  ol  li fieldset legend { position:relative; width:auto; padding:0; margin: 0; }
+form.formtastic fieldset  ol  li fieldset legend span { position:relative; padding:0; margin: 0; }
+form.formtastic fieldset  ol  li fieldset legend.label label { position:relative; width:100px; padding:0; margin: 0; }
+form.formtastic fieldset  ol  li fieldset ol { float:none; width:auto; margin-left:100px; padding:0; }
+form.formtastic fieldset  ol  li fieldset ol li { float:left; padding:0; border:0; }
+
+form.formtastic fieldset.buttons input { padding: 3px 10px; font-size: 14px; }
+header .article label{float:left; height:16px; font-size:12px; margin-top:5px;}
