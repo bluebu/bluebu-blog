@@ -191,6 +191,17 @@ a img {
     width: 670px;
     min-height: 420px;
 }
+#content .post h1{
+  text-align: center;
+  font-size:24px;
+}
+#content .post h1 a{
+  color:#FFFFFF;
+}
+#content .post .info{
+  text-align:right;
+}
+
 #content .post_content{
   padding-bottom:10px;
 }
@@ -491,3 +502,26 @@ a#douban {
     line-height: 38px;
 }
 /* anatar end */
+
+
+/* article list start */
+ul.post_list{
+    list-style: none inside none;
+}
+ul.post_list li{
+  padding:10px;
+  background: none repeat scroll 0 0 #262626;
+  margin-bottom:5px;
+}
+ul.post_list li h2{
+    margin:0;
+}
+ul.post_list li h2 a{
+    color:#FFFFFF;
+}
+ul.post_list li .summary{
+  font-size:12px;
+  line-height:20px;
+}
+
+/* article list end */

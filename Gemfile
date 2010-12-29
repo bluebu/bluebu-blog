@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
-
+# gem 'acts-as-taggable-on'
 
 # 富文本编辑器
 gem 'ckeditor'
